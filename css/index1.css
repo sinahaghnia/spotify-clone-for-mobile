@@ -1,0 +1,241 @@
+@media(max-width: 431px){
+
+                                                  /* start to make haeder */
+    body{
+      /* background-color: #0e1215  ; */
+       /* background: #232526;
+       background: -webkit-linear-gradient(to top, #1a1a1b, #2b2e2f);
+       background: linear-gradient(to bottom, #060606, #232526);  */
+
+      background: #000000; 
+      background: -webkit-linear-gradient(to bottom, #243B55, #080808); 
+      background: linear-gradient(to top, #243B55, #090909); 
+
+
+
+    }
+
+    .navigation-bar{
+        border-bottom: 3px solid rgb(0, 0, 0);
+
+    }
+    .navigation-bar {
+      height: 10rem;
+    }
+
+   .navigation-bar .up-navigation{
+    display: flex;
+    justify-content: space-between;
+    
+    }
+     .navigation-bar .up-right-navigation {
+        display: grid;
+        grid-template-columns: 1fr 2fr;  
+     }
+
+      .navigation-bar .up-right-navigation .your-library{
+        font-size: 3.2rem;
+        margin: 10px 0px 0px 0px;
+        color: aliceblue;
+      }
+
+    .navigation-bar .up-right-navigation .circle{
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        background-color: #0be881;
+        border: 2px solid #0be881;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin:7px 10px;
+    }
+
+    .navigation-bar .up-left-navigation{
+      margin: 15px 20px 15px 15px;
+
+    }
+
+     .navigation-bar .up-left-navigation i{
+      font-size: 2.3rem;
+      color: azure;
+     }
+
+     .navigation-bar .up-left-navigation #magnify{
+      margin-left: 20px;
+
+     }
+
+
+
+      .navigation-bar .down-navigation{
+        margin: 10px;
+      }
+
+      .navigation-bar .down-navigation span{
+        font-size: 1.5rem;
+        color: aliceblue;
+        background-color: rgba(240, 248, 255, 0.133);
+        border: 1px solid rgba(240, 248, 255, 0.071);
+        border-radius: 20px;
+        padding: 4px 13px 4px 13px;
+      
+
+      }
+
+      .navigation-bar .down-navigation .artists{
+        margin-right: 3px;
+      
+
+      }
+
+                                              /* start to make main|music list */
+
+      main{
+        height: 78vh;
+      }
+
+      main .music-list .recent-cases{
+        display: flex;
+        padding: 13px 10px;
+      }
+
+      main .music-list .recent-cases span{
+        color: white;
+        padding: 2px 0px 0px 0px;
+
+      }
+
+      main .music-list .recent-cases h2{
+        color: white;
+        font-size: 1.5rem;
+        margin: 0px 5px 0px 0px;
+        padding: 0px;
+      }
+
+      main .music-list{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(auto-fit , mainmax(100px , 1fr));
+
+      }
+
+      main .music-list .music-1{
+        display: flex;
+        margin: 0px 5px 15px 0px;
+        cursor: pointer;
+      }
+
+      main .music-list .music-1:hover{
+        background-color: rgba(0, 0, 0, 0.158);
+        
+      }
+
+      main .music-list .music-1 img{
+        margin-right: 8px ;
+        width: 60px;
+        height: 60px;
+      }
+
+      main .music-list .music-1 .information-music{
+        display: flex;
+        flex-direction: column;
+        margin: 5px 14px 0px 0px;
+        font-size: 1rem;
+      }
+
+      
+
+      main .music-list .music-1 .music-name{
+        color: rgb(47, 144, 52);
+        font-size: 1.7rem;
+        margin-bottom: 7px;
+        font-family: roboto;
+      }
+
+      main .music-list .music-1 .albom-name{
+        color: white;
+        margin-top: 2px;
+        font-family: roboto;
+        font-size: 1.2rem;
+      }
+
+      main .music-list .add-music{
+        display: flex;
+        margin: 0px 12px;
+        
+      }
+
+      main .music-list .add-music .circle-plus{
+        color: white;
+        width: 55px ;
+        height: 55px;
+        border: 2px solid aliceblue;
+        border-radius: 50%;
+        font-size: 4.5rem;
+        padding: 0px 13px 0px 0px;
+        background-color: rgba(240, 248, 255, 0.159);
+
+      }
+
+      main .music-list .add-music .span-add-music{
+        color: white;
+        font-size: 1.7rem;
+        margin: 8px 9px 0px 5px;
+        font-family: persianFont;
+
+      }
+                                                          /* start to make foooter */
+
+      footer{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(5 , 1fr);
+        height: 10vh;
+        text-align: center;
+        padding-top: 10px;
+        font-family: persianFont;
+      }
+
+      footer i{
+        font-size: 2.5rem;
+        color: rgb(240, 248, 255) ;
+      }
+
+      footer span{
+        font-size: 1rem;
+        padding-top: 5px;
+        color: aliceblue ;
+      }
+      
+      footer .main-page{
+        display: flex;
+        flex-direction: column;
+      }
+
+      footer .footer-search{
+          display: flex;
+        flex-direction: column;
+      }
+
+      footer .footer-library{
+          display: flex;
+        flex-direction: column;
+
+      }
+
+      footer .premium-spotify{
+          display: flex;
+        flex-direction: column;
+        
+      }
+
+      footer .make-new{
+          display: flex;
+        flex-direction: column;
+       
+      }
+
+
+    
+}

@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+html , body {
+    direction: rtl;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: persianFont;
+    src: url(../fonts/NotoSansArabic-VariableFont_wdth\,wght.ttf);
+}
