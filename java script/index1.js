@@ -38,7 +38,3 @@ musicLibrary.forEach(function(song , index){
   })
   
 })
-
-// musicLibrary.addEventListener('tuochstart' , function(){
-//   musicLibrary.style.backgroudColor = 'red'
-// })
