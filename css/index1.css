@@ -2,11 +2,6 @@
 
                                                   /* start to make haeder */
     body{
-      /* background-color: #0e1215  ; */
-       /* background: #232526;
-       background: -webkit-linear-gradient(to top, #1a1a1b, #2b2e2f);
-       background: linear-gradient(to bottom, #060606, #232526);  */
-
       background: #000000; 
       background: -webkit-linear-gradient(to bottom, #243B55, #080808); 
       background: linear-gradient(to top, #243B55, #090909); 
@@ -20,7 +15,7 @@
 
     }
     .navigation-bar {
-      height: 10rem;
+      height: 12.5vh;
     }
 
    .navigation-bar .up-navigation{
@@ -34,8 +29,8 @@
      }
 
       .navigation-bar .up-right-navigation .your-library{
-        font-size: 3.2rem;
-        margin: 10px 0px 0px 0px;
+        font-size: 7vw;
+        margin: 13px 0px 0px 0px;
         color: aliceblue;
       }
 
@@ -46,9 +41,10 @@
         background-color: #0be881;
         border: 2px solid #0be881;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         margin:7px 10px;
+       
     }
 
     .navigation-bar .up-left-navigation{
@@ -57,7 +53,7 @@
     }
 
      .navigation-bar .up-left-navigation i{
-      font-size: 2.3rem;
+      font-size: 2.9rem;
       color: azure;
      }
 
@@ -79,20 +75,16 @@
         border: 1px solid rgba(240, 248, 255, 0.071);
         border-radius: 20px;
         padding: 4px 13px 4px 13px;
-      
-
       }
 
       .navigation-bar .down-navigation .artists{
         margin-right: 3px;
-      
-
       }
 
                                               /* start to make main|music list */
 
       main{
-        height: 78vh;
+        height: 75vh;
       }
 
       main .music-list .recent-cases{
@@ -108,7 +100,7 @@
 
       main .music-list .recent-cases h2{
         color: white;
-        font-size: 1.5rem;
+        font-size: 3.5vw;
         margin: 0px 5px 0px 0px;
         padding: 0px;
       }
@@ -116,7 +108,7 @@
       main .music-list{
         display: grid;
         grid-template-columns:1fr;
-        grid-template-rows: repeat(auto-fit , mainmax(100px , 1fr));
+        grid-template-rows: repeat(auto-fit , mainmax(300px , 1fr));
 
       }
 
@@ -133,22 +125,20 @@
 
       main .music-list .music-1 img{
         margin-right: 8px ;
-        width: 60px;
-        height: 60px;
+        width: 75px;
+        height: 75px;
       }
 
       main .music-list .music-1 .information-music{
         display: flex;
         flex-direction: column;
-        margin: 5px 14px 0px 0px;
-        font-size: 1rem;
+        margin: 10px 14px 0px 0px;
+  
       }
-
-      
 
       main .music-list .music-1 .music-name{
         color: rgb(47, 144, 52);
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         margin-bottom: 7px;
         font-family: roboto;
       }
@@ -157,7 +147,7 @@
         color: white;
         margin-top: 2px;
         font-family: roboto;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
 
       main .music-list .add-music{
@@ -168,74 +158,96 @@
 
       main .music-list .add-music .circle-plus{
         color: white;
-        width: 55px ;
-        height: 55px;
+        width: 70px ;
+        height: 70px;
         border: 2px solid aliceblue;
         border-radius: 50%;
-        font-size: 4.5rem;
-        padding: 0px 13px 0px 0px;
+        font-size: 5rem;
+        padding: 4px 18px 0px 0px;
         background-color: rgba(240, 248, 255, 0.159);
 
       }
 
       main .music-list .add-music .span-add-music{
         color: white;
-        font-size: 1.7rem;
+        font-size: 2rem;
         margin: 8px 9px 0px 5px;
         font-family: persianFont;
 
       }
-                                                          /* start to make foooter */
+                                                         /* start to make foooter */
 
       footer{
+        display: flex;
+        align-items: center;
+      }                                                   
+
+      footer .footer-access-icons{
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: repeat(5 , 1fr);
-        height: 10vh;
+        height: 12.5vh;
         text-align: center;
         padding-top: 10px;
         font-family: persianFont;
       }
 
-      footer i{
-        font-size: 2.5rem;
+      footer .footer-access-icons i{
+        font-size: 3.3rem;
         color: rgb(240, 248, 255) ;
       }
 
-      footer span{
-        font-size: 1rem;
+      footer .footer-access-icons span{
+        font-size: 1.2rem;
         padding-top: 5px;
         color: aliceblue ;
       }
       
-      footer .main-page{
+      footer .footer-access-icons .main-page{
         display: flex;
         flex-direction: column;
       }
 
-      footer .footer-search{
+      footer .footer-access-icons .footer-search{
           display: flex;
         flex-direction: column;
       }
 
-      footer .footer-library{
+      footer .footer-access-icons .footer-library{
           display: flex;
         flex-direction: column;
 
       }
 
-      footer .premium-spotify{
+      footer .footer-access-icons .premium-spotify{
           display: flex;
         flex-direction: column;
         
       }
 
-      footer .make-new{
+      footer .footer-access-icons .make-new{
           display: flex;
         flex-direction: column;
        
       }
 
+}
+@media(max-height : 780px){
 
-    
+        .navigation-bar .down-navigation{
+        margin: 5px 10px 5px 5px;
+      }
+
+      .navigation-bar .down-navigation span{
+        font-size: 1.2rem;
+        color: aliceblue;
+        background-color: rgba(240, 248, 255, 0.133);
+        border: 1px solid rgba(240, 248, 255, 0.071);
+        border-radius: 17px;
+        padding: 4px 13px 4px 13px;
+      }
+
+      .navigation-bar .down-navigation .artists{
+        margin-right: 3px;
+      }
 }
