@@ -194,19 +194,19 @@
 
       footer .footer-access-icons i{
         font-size: 3.3rem;
-        color: rgb(240, 248, 255) ;
+        color: rgb(255, 255, 255) ;
       }
 
       footer .footer-access-icons span{
         font-size: 1.2rem;
         padding-top: 5px;
-        color: aliceblue ;
+        color: rgb(255, 255, 255) ;
       }
       
       footer .footer-access-icons .main-page{
         display: flex;
         flex-direction: column;
-         opacity: .8;
+         opacity: .85;
       }
 
       footer .footer-access-icons .main-page:hover{
@@ -216,7 +216,7 @@
       footer .footer-access-icons .footer-search{
         display: flex;
         flex-direction: column;
-        opacity: .8;
+        opacity: .85;
       }
 
         footer .footer-access-icons .footer-search:hover{
@@ -227,7 +227,7 @@
       footer .footer-access-icons .footer-library{
           display: flex;
         flex-direction: column;
-        opacity: .8;
+        opacity: .85;
 
 
       }
@@ -240,7 +240,7 @@
       footer .footer-access-icons .premium-spotify{
           display: flex;
         flex-direction: column;
-        opacity: .8;
+        opacity: .85;
         
       }
 
@@ -252,7 +252,7 @@
       footer .footer-access-icons .make-new{
           display: flex;
         flex-direction: column;
-        opacity: .8;
+        opacity: .85;
       }
 
         footer .footer-access-icons .make-new:hover{
