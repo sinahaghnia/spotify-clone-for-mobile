@@ -162,8 +162,8 @@
         height: 70px;
         border: 2px solid aliceblue;
         border-radius: 50%;
-        font-size: 5rem;
-        padding: 4px 18px 0px 0px;
+        font-size: 5.5rem;
+        padding: 2px 17px 0px 0px;
         background-color: rgba(240, 248, 255, 0.159);
 
       }
@@ -206,29 +206,58 @@
       footer .footer-access-icons .main-page{
         display: flex;
         flex-direction: column;
+         opacity: .8;
+      }
+
+      footer .footer-access-icons .main-page:hover{
+        opacity: 1;
       }
 
       footer .footer-access-icons .footer-search{
-          display: flex;
+        display: flex;
         flex-direction: column;
+        opacity: .8;
+      }
+
+        footer .footer-access-icons .footer-search:hover{
+        opacity: 1;
+
       }
 
       footer .footer-access-icons .footer-library{
           display: flex;
         flex-direction: column;
+        opacity: .8;
+
+
+      }
+
+        footer .footer-access-icons .footer-library:hover{
+        opacity: 1;
 
       }
 
       footer .footer-access-icons .premium-spotify{
           display: flex;
         flex-direction: column;
+        opacity: .8;
         
+      }
+
+        footer .footer-access-icons .premium-spotify:hover{
+        opacity: 1;
+
       }
 
       footer .footer-access-icons .make-new{
           display: flex;
         flex-direction: column;
-       
+        opacity: .8;
+      }
+
+        footer .footer-access-icons .make-new:hover{
+        opacity: 1;
+
       }
 
 }
