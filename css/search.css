@@ -1,0 +1,210 @@
+@media(max-width: 431px){
+                                             /* start to make haeder */
+    body{
+
+      background: #232526; 
+      background: -webkit-linear-gradient(to top, #232526, #232526);  
+      background: linear-gradient(to top, #0f1011, #101111); 
+    }
+
+header{
+    height: 12.5vh;
+    border-bottom: 1.7px solid rgb(171, 171, 171);
+}
+header .search-input{
+    display: flex;
+    align-items: center;
+    padding:40px 20px 0px 10px;
+}
+
+header .search-input span{
+    color: aliceblue;
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+header .search-input input{
+    font-family: persianFont;
+    color: aliceblue;
+    width: 90%;
+    background-color: #353839;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding-right:10px ;
+    outline: white ;
+
+}
+
+                           /* start to make main or music list for search  */
+
+main{
+    height: 70vh;
+}
+
+main .choose-your-favorite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: persianFont;
+ 
+}
+
+main .choose-your-favorite h1{
+    color: aliceblue;
+    margin: 0px;
+}
+
+main .choose-your-favorite span{
+    color: rgb(144, 141, 141);
+}
+
+main .div-error{
+  text-align: center;
+}
+
+main .div-error .error{
+  font-family: persianfont;
+  font-size: 2rem;
+  color: aliceblue;
+  display: none;
+  
+}
+
+
+                         /* hide music list for user search */
+
+      main .music-list{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(auto-fit , mainmax(300px , 1fr));
+      }
+
+      main .music-list .music-1{
+        /* display: flex; */
+        margin: 20px 5px 15px 0px;
+        cursor: pointer;
+        display: none;
+      }
+
+      main .music-list .music-1:hover{
+        background-color: rgba(0, 0, 0, 0.158);
+        
+      }
+
+      main .music-list .music-1 img{
+        margin-right: 8px ;
+        width: 75px;
+        height: 75px;
+      }
+
+      main .music-list .music-1 .information-music{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 14px 0px 0px;
+  
+      }
+
+      main .music-list .music-1 .music-name{
+        color: rgb(47, 144, 52);
+        font-size: 1.8rem;
+        margin-bottom: 7px;
+        font-family: roboto;
+      }
+
+      main .music-list .music-1 .artist-name{
+        color: white;
+        margin-top: 2px;
+        font-family: roboto;
+        font-size: 1.4rem;
+      }                        
+
+
+                       /* start to make footer  */
+
+
+    footer{
+        height: 17.5vh;
+        display: flex;
+        align-items: end;
+      } 
+
+      footer .footer-access-icons{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(5 , 1fr);
+        text-align: center;
+        padding-top: 10px;
+        font-family: persianFont;
+      }
+
+      footer .footer-access-icons i{
+        font-size: 3.3rem;
+        color: rgb(255, 255, 255) ;
+      }
+
+      footer .footer-access-icons span{
+        font-size: 1.2rem;
+        padding-top: 5px;
+        color: rgb(255, 255, 255) ;
+      }
+      
+      footer .footer-access-icons .main-page{
+        display: flex;
+        flex-direction: column;
+         opacity: .85;
+      }
+
+      footer .footer-access-icons .main-page:hover{
+        opacity: 1;
+      }
+
+      footer .footer-access-icons .footer-search{
+        display: flex;
+        flex-direction: column;
+        opacity: .85;
+      }
+
+        footer .for-flex-style .footer-access-icons .footer-search:hover{
+        opacity: 1;
+
+      }
+
+      footer .footer-access-icons .footer-library{
+          display: flex;
+        flex-direction: column;
+        opacity: .85;
+
+
+      }
+
+        footer .footer-access-icons .footer-library:hover{
+        opacity: 1;
+
+      }
+
+      footer .footer-access-icons .premium-spotify{
+          display: flex;
+        flex-direction: column;
+        opacity: .85;
+        
+      }
+
+        footer .footer-access-icons .premium-spotify:hover{
+        opacity: 1;
+
+      }
+
+      footer .footer-access-icons .make-new{
+          display: flex;
+        flex-direction: column;
+        opacity: .85;
+      }
+
+        footer .footer-access-icons .make-new:hover{
+        opacity: 1;
+
+      }
+}

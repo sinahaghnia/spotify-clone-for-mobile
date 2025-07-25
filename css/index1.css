@@ -2,20 +2,21 @@
 
                                                   /* start to make haeder */
     body{
-      background: #000000; 
-      background: -webkit-linear-gradient(to bottom, #243B55, #080808); 
-      background: linear-gradient(to top, #243B55, #090909); 
 
+      background: #232526; 
+      background: -webkit-linear-gradient(to top, #232526, #232526);  
+      background: linear-gradient(to top, #0f1011, #101111); 
+      display: flex;
+      flex-direction: column;
+    }
 
-
+    header{
+      height: 12.5vh;
     }
 
     .navigation-bar{
-        border-bottom: 3px solid rgb(0, 0, 0);
+        border-bottom: 1.7px solid rgb(171, 171, 171);
 
-    }
-    .navigation-bar {
-      height: 12.5vh;
     }
 
    .navigation-bar .up-navigation{
@@ -84,7 +85,12 @@
                                               /* start to make main|music list */
 
       main{
-        height: 75vh;
+        /* height: 75vh; */
+        
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        overflow-y: auto;
       }
 
       main .music-list .recent-cases{
@@ -108,8 +114,7 @@
       main .music-list{
         display: grid;
         grid-template-columns:1fr;
-        grid-template-rows: repeat(auto-fit , mainmax(300px , 1fr));
-
+        grid-template-rows: repeat(auto-fit);
       }
 
       main .music-list .music-1{
@@ -137,14 +142,14 @@
       }
 
       main .music-list .music-1 .music-name{
-        color: rgb(47, 144, 52);
+        color: rgb(133, 221, 138);
         font-size: 1.8rem;
         margin-bottom: 7px;
         font-family: roboto;
       }
 
-      main .music-list .music-1 .albom-name{
-        color: white;
+      main .music-list .music-1 .artist-name{
+        color: rgb(137, 136, 136);
         margin-top: 2px;
         font-family: roboto;
         font-size: 1.4rem;
@@ -179,14 +184,15 @@
 
       footer{
         display: flex;
-        align-items: center;
+        align-items: end;
+         height: 12.5vh;
+         flex: 0;
       }                                                   
 
       footer .footer-access-icons{
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: repeat(5 , 1fr);
-        height: 12.5vh;
         text-align: center;
         padding-top: 10px;
         font-family: persianFont;

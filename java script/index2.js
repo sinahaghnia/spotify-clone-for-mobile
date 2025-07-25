@@ -47,7 +47,7 @@
  const backward = document.getElementById('backward');
 
 
-                                               // get the songsClicked from local storage and make the changes 
+                                               // get the songsClicked from index.html and make the changes 
 
 const songsClicked = JSON.parse(localStorage.getItem("songsClicked"))
 if(songsClicked){
@@ -58,6 +58,20 @@ if(songsClicked){
     musicName.innerText = songsClicked.musicName;
     artistName.innerText = songsClicked.artistName;
 }
+
+                                             // get the songsClicked from index.html and make the changes 
+
+const searchMusic = JSON.parse(localStorage.getItem('searchMusic'))
+
+if(searchMusic){
+
+        audio.src = searchMusic.src;
+    albomName.innerText = searchMusic.albomName;
+    coverMusic.src = searchMusic.cover;
+    musicName.innerText = searchMusic.musicName;
+    artistName.innerText = searchMusic.artistName;
+}
+
 
                                          //    add play and pause buttons   
 

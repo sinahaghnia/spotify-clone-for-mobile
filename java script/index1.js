@@ -38,3 +38,10 @@ musicLibrary.forEach(function(song , index){
   })
   
 })
+                                      // when click on the magnify icon go to search page
+                                     
+const searchIcon = document.getElementById('magnify');
+
+searchIcon.addEventListener('click' , function(){
+    window.location.href = 'search.html';
+})

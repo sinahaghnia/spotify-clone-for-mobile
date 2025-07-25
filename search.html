@@ -3,52 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> spotify </title>
-    <link rel="stylesheet" href="./css/index1.css">
+    <title> serach page</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/search.css">
 </head>
 <body>
-
     <header>
+        <div class="search-input">
+            <span id="back-icon"> < </span>
+          <input id="input-box" type="text" placeholder="جست و جو در کتابخانه شما">
+          
+        </div>
+    
 
-         <section class="navigation-bar">
-
-               <div class="up-navigation">
-             
-            <div class="up-right-navigation">
-                <span class="circle"> s </span>
-                <h1 class="your-library" >کتابخانه شما </h1>
-            </div>
-
-           <div class="up-left-navigation">
-              <i  id="magnify" class="fa-solid fa-magnifying-glass"></i> 
-              <i  id="plis" class="fa-solid fa-plus"></i>
-           </div>
-            
-            
-            
-          </div>
-
-          <div class="down-navigation">
-
-            <span class="alboms"> آلبوم ها</span>
-            <span class="artists">هنرمندان</span>
-
-          </div>
-         </section>
-        
     </header>
 
-    <main> 
+    <main>
 
-     <section class="music-list">
-
-           <div class="recent-cases">
-
-            <span class="up-down-icon">↕</span>
-            <h2 class="recently">موارد اخیر</h2>
-        </div>
-
+        <section class="music-list">
         
         <div class="musics">
 
@@ -57,7 +29,7 @@
                     <div class="information-music">
 
                     <span class="music-name">kharidam ye glock</span>
-                    <span class="artist-name"> Amin tijay </span>
+                    <span class="artist-name"> Amin tijay</span>
                 </div>
             </div>
 
@@ -66,7 +38,7 @@
                     <div class="information-music">
 
                     <span class="music-name">dancin</span>
-                    <span class="artist-name"> Arron smith</span>
+                    <span class="artist-name"> arron smith</span>
                 </div>
             </div>
 
@@ -75,7 +47,7 @@
                     <div class="information-music">
 
                     <span class="music-name">razo niaz</span>
-                    <span class="artist-name"> Amir mahan </span>
+                    <span class="artist-name"> amir mahan</span>
                 </div>
             </div>
 
@@ -89,11 +61,20 @@
 
      </section>
 
+        <div class="choose-your-favorite">
+            <h1> موارد دلخواهتان را پیدا کنید </h1>
+            <span> همه چیز هایی که ذخیره دنبال یا ایجاد کرده ایید را جست و جو کنید.</span>
+        </div>
+
+        <div class="div-error">
+            <h1 class="error">مورد منطبقی یافت نشد </h1>
+        </div>
+
     </main>
 
     <footer>
 
-        <div class="footer-access-icons">
+       <div class="footer-access-icons">
 
              <div class="main-page">
             <i class="fa-solid fa-house"></i>
@@ -121,9 +102,10 @@
         </div>
 
         </div>
+
     </footer>
-    
-    <script src="https://kit.fontawesome.com/db0586cd68.js" crossorigin="anonymous"></script>
-    <script src="./java script/index1.js"></script>
+ 
+ <script src="https://kit.fontawesome.com/db0586cd68.js" crossorigin="anonymous"></script>
+ <script src="./java script/search.js"></script>
 </body>
 </html>
