@@ -50,7 +50,6 @@
 
 
     .broadcast-page .lower-part .music-name-and-icons{
-        direction: ltr;
         color: rgb(255, 255, 255);
         margin: 30px 20px 10px 20px;
         display: flex;
@@ -58,26 +57,6 @@
         align-items: center;
     }
 
-    .broadcast-page .lower-part .music-name-and-icons .plus-x-icons{
-        display: flex;
-        align-items: center;
-        
-    }
-
-    .broadcast-page .lower-part .music-name-and-icons #x-icon{
-        font-size: 3.9rem;
-        margin: 0px 0px 0px 20px;
-        transform: translate(-0% , +5%);
-    }
-
-    .broadcast-page .lower-part .music-name-and-icons #plus-button{
-        font-size: 2.6rem;
-        width: 31px;
-        height: 31px;
-        border: 3px solid rgb(255, 255, 255);
-        border-radius: 50%;
-        text-align: center;
-    }
 
     .broadcast-page .lower-part .music-name-and-icons .music-name2{
         color: aliceblue;

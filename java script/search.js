@@ -69,6 +69,7 @@ const inputBox = document.getElementById('input-box');
 const musicList = document.querySelectorAll('.music-1');
 const bodyText = document.querySelector('.choose-your-favorite');
 const error = document.querySelector('.error');
+const libraryIcon = document.querySelector('.footer-library');
                                              
                              // add back button in the search page
 
@@ -119,3 +120,10 @@ musicList.forEach(( song , index )=>{
     })
 
 })              
+
+
+                  // when user click on the library icon in footer go to library page
+
+libraryIcon.addEventListener('click' ,()=>{
+window.location.href = 'index.html'
+})
