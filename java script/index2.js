@@ -25,11 +25,47 @@
          albomName :` درحال پخش از 
          razo niaz`,
          cover: "./image/Amir-Mahan-Razo-Niaz.jpg"
-    }
+    },
+    {
+    src: "./music/chvrsi_-_jigh_ft_hoomaan.mp3",
+    musicName: "Gigh",
+    artistName: "chavrsi & hooman",
+    albomName: "درحال پخش از gigh",
+    cover: "./image/Chvrsi-Jigh-(Ft-Hoomaan).jpg"
+  },  {
+    src: "./music/06 - Only (Ft. Drake, Lil Wayne & Chris Brown).mp3",
+    musicName: "only",
+    artistName: "nacki minaj",
+    albomName: "درحال پخش از only",
+    cover: "./image/IMG_20230925_201405.jpg"
+  },  {
+    src: "./music/Lady Gaga X Bruno Mars - Die With A Smile.mp3",
+    musicName: "Die with smile",
+    artistName: " Lady gaga",
+    albomName: "درحال پخش از die with smile",
+    cover: "./image/Lady-Gaga-Die-With-A-Smile-x-Glimpse-Of-Us-(Mashup).jpg"
+  },  {
+    src: "./music/Ehsan Daryadel - Botri (320).mp3",
+    musicName: "Botri",
+    artistName: "Ehsan daryadel",
+    albomName: "درحال پخش از Botri",
+    cover: "./image/Ehsan-Daryadel-Botri.jpg"
+  },  {
+    src: "./music/Erfan Tahmasbi - Khodahafez.mp3",
+    musicName: "Khodahafez",
+    artistName: "Erfan tahmasbi",
+    albomName: "درحال پخش از ",
+    cover: "./image/Erfan_Tahmasbi-__B_Kalam_Khodahafez.jpg"
+  },  {
+    src: "./music/Sogand - Tehran.mp3",
+    musicName: "Tehran",
+    artistName: "Sogand",
+    albomName: "درحال پخش از tahran",
+    cover: "./image/E2808EUnknown20Artist20-20Man20Bikhabam20Bikhabam.jpg"
+  }
       ]  
 
                                      //   defining the needed element 
-
 
  const albomName = document.querySelector('.albom-name');
  const coverMusic = document.getElementById('img-song');
@@ -47,7 +83,7 @@
  const backward = document.getElementById('backward');
 
 
-                                               // get the songsClicked from index.html and make the changes 
+                                               // get the songsClicked from index.html or search.html and play the new song
 
 const songsClicked = JSON.parse(localStorage.getItem("songsClicked"))
 if(songsClicked){
@@ -58,20 +94,6 @@ if(songsClicked){
     musicName.innerText = songsClicked.musicName;
     artistName.innerText = songsClicked.artistName;
 }
-
-                                             // get the songsClicked from index.html and make the changes 
-
-const searchMusic = JSON.parse(localStorage.getItem('searchMusic'))
-
-if(searchMusic){
-
-        audio.src = searchMusic.src;
-    albomName.innerText = searchMusic.albomName;
-    coverMusic.src = searchMusic.cover;
-    musicName.innerText = searchMusic.musicName;
-    artistName.innerText = searchMusic.artistName;
-}
-
 
                                          //    add play and pause buttons   
 

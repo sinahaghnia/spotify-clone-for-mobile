@@ -12,10 +12,12 @@
 
     header{
       height: 12.5vh;
+    
     }
 
     .navigation-bar{
         border-bottom: 1.7px solid rgb(171, 171, 171);
+        height: 100%;
 
     }
 
@@ -86,11 +88,12 @@
 
       main{
         /* height: 75vh; */
-        
         display: flex;
         flex-direction: column;
         flex: 1;
         overflow-y: auto;
+        scrollbar-width: none;
+        padding-bottom: 100px;
       }
 
       main .music-list .recent-cases{
@@ -165,10 +168,10 @@
         color: white;
         width: 70px ;
         height: 70px;
-        border: 2px solid aliceblue;
+        border: 2px solid rgb(146, 148, 148);
         border-radius: 50%;
         font-size: 5.5rem;
-        padding: 2px 17px 0px 0px;
+        padding: 2px 18px 0px 0px;
         background-color: rgba(240, 248, 255, 0.159);
 
       }
@@ -187,6 +190,8 @@
         align-items: end;
          height: 12.5vh;
          flex: 0;
+         position: relative;
+         
       }                                                   
 
       footer .footer-access-icons{
@@ -196,6 +201,10 @@
         text-align: center;
         padding-top: 10px;
         font-family: persianFont;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.051) ;
+         backdrop-filter: blur(1px);
+         border-radius: 10px;
       }
 
       footer .footer-access-icons i{
@@ -212,17 +221,16 @@
       footer .footer-access-icons .main-page{
         display: flex;
         flex-direction: column;
-         opacity: .85;
       }
 
       footer .footer-access-icons .main-page:hover{
         opacity: 1;
-      }
+      } *
 
       footer .footer-access-icons .footer-search{
         display: flex;
         flex-direction: column;
-        opacity: .85;
+       
       }
 
         footer .footer-access-icons .footer-search:hover{
@@ -233,8 +241,8 @@
       footer .footer-access-icons .footer-library{
           display: flex;
         flex-direction: column;
-        opacity: .85;
-
+         opacity: .85; 
+ 
 
       }
 
@@ -267,18 +275,32 @@
       }
 
 }
+
+@media(max-height : 825px){
+
+      header{
+        height: 12.5vh;
+      }
+
+        .navigation-bar .down-navigation{
+        margin: 5px 10px 5px 5px;
+      }
+}
+
+
 @media(max-height : 780px){
+
+      header{
+        height: 12.5vh;
+      }
 
         .navigation-bar .down-navigation{
         margin: 5px 10px 5px 5px;
       }
 
-      .navigation-bar .down-navigation span{
-        font-size: 1.2rem;
-        color: aliceblue;
-        background-color: rgba(240, 248, 255, 0.133);
-        border: 1px solid rgba(240, 248, 255, 0.071);
-        border-radius: 17px;
+            .navigation-bar .down-navigation span{
+        font-size: 1.3rem;
+        border-radius: 20px;
         padding: 4px 13px 4px 13px;
       }
 

@@ -5,16 +5,19 @@
       background: #232526; 
       background: -webkit-linear-gradient(to top, #232526, #232526);  
       background: linear-gradient(to top, #0f1011, #101111); 
+      display: flex;
+      flex-direction: column;
     }
 
 header{
     height: 12.5vh;
     border-bottom: 1.7px solid rgb(171, 171, 171);
+    flex: 0;
 }
 header .search-input{
     display: flex;
     align-items: center;
-    padding:40px 20px 0px 10px;
+    padding:40px 20px 15px 10px;
 }
 
 header .search-input span{
@@ -34,13 +37,16 @@ header .search-input input{
     border-radius: 10px;
     padding-right:10px ;
     outline: white ;
-
 }
 
                            /* start to make main or music list for search  */
 
 main{
     height: 70vh;
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding-bottom: 100px;
 }
 
 main .choose-your-favorite{
@@ -82,11 +88,12 @@ main .div-error .error{
         grid-template-rows: repeat(auto-fit , mainmax(300px , 1fr));
       }
 
-      main .music-list .music-1{
-        /* display: flex; */
+      
+      main .music-list .music-1{   /* when user search in the serachbox, .music-1 display = flex */
         margin: 20px 5px 15px 0px;
         cursor: pointer;
         display: none;
+        /* display: flex; */
       }
 
       main .music-list .music-1:hover{
@@ -124,11 +131,12 @@ main .div-error .error{
 
                        /* start to make footer  */
 
-
     footer{
         height: 17.5vh;
         display: flex;
         align-items: end;
+        flex: 0;
+        position: relative;
       } 
 
       footer .footer-access-icons{
@@ -138,6 +146,10 @@ main .div-error .error{
         text-align: center;
         padding-top: 10px;
         font-family: persianFont;
+
+         background: rgba(0, 0, 0, 0.051) ;
+         backdrop-filter: blur(1px);
+         position: fixed;
       }
 
       footer .footer-access-icons i{
