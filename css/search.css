@@ -103,8 +103,9 @@ main .div-error .error{
 
       main .music-list .music-1 img{
         margin-right: 8px ;
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
       }
 
       main .music-list .music-1 .information-music{
