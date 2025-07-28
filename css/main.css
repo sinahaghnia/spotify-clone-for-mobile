@@ -8,6 +8,9 @@ html , body {
     padding: 0px;
     height: 100dvh;
 }
+body{
+    overflow: hidden;
+}
 
 html{
     font-size: 10px;
